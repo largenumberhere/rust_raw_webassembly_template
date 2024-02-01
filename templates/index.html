@@ -1,0 +1,26 @@
+<!--
+MIT License
+Copyright (c) 2024 largenumbergoeshere
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Unnamed site</title>
+  </head>
+  <body>
+    <!-- Fetch the javascript loader after the rest of the document has loaded because it is a `module` -->
+    <script type="module">
+      // Try to fetch and run the wasm_bindgen wrapper script.
+      try {
+        const module = await import("./no_modules.js");
+        await module.default();
+      }
+      catch (e) {
+        // Log in several clear ways when it fails
+        console.log(`${e}`);
+        alert(`Fatal error loading page. Plese check logs and reach out to tech support. Details: ${e}`);
+      }
+   </script>
+  </body>
+</html>
