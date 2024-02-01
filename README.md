@@ -1,4 +1,4 @@
-# Raw rust Web-Assembly template
+# Rust Raw Webassembly Template
 A template for writing minimal wasm in rust. 
 No frameworks, no packages, no javascript, no nodejs, no nothing except some plumbing to compile and load rust inside a webpage. This is ***not batteries included***, you will have to do everything manually.
 
